@@ -23,30 +23,10 @@ struct ContentView: View {
                     Text(workout.Exercise + " " + workout.Difficulty) // we want to change the color of the list with the difficulty
                 }
             }
-        }.navigationTitle("Workouts")
+        }.navigationTitle("Exercises")
             .searchable(text: $searchString)
         
-        TabView(selection: $selectedtab){
-            
-            WorkoutVeiw()
-                .tabItem{
-                    Image(systemName: "house")
-                    Text("Home")
-                }
-                .tag(0)
-            Image(systemName: "stopwatch")
-                .tabItem{
-                    Image(systemName: "stopwatch")
-                    Text("Sessions")
-                }
-                .tag(1)
-            Image(systemName: "calendar")
-                .tabItem{
-                    Image(systemName: "calendar")
-                    Text("My calender")
-                }.tag(2)
-        }
-
+        
     }
     
     
