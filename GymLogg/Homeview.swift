@@ -20,7 +20,7 @@ struct HomeView: View {
                 
                 ContentView()
                     .tabItem{
-                        Label("Workouts", systemImage: "dumbbell")
+                        Label("All Workouts", systemImage: "dumbbell")
                         Text("Home")
                     }
                     .tag(1)
@@ -29,6 +29,11 @@ struct HomeView: View {
                         Label("Calendar", systemImage: "calendar")
                         Text("Home")
                     }
+            MySplits()
+                .tabItem{
+                    Label("Client Splits", systemImage: "book")
+                    Text("Home")
+                }
                     .tag(2)
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
         

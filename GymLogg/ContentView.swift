@@ -23,7 +23,7 @@ struct ContentView: View {
                     Text(workout.Exercise + " " + workout.Difficulty) // we want to change the color of the list with the difficulty
                 }
             }
-        }.navigationTitle("Exercises")
+        }.navigationTitle("Workouts")
             .searchable(text: $searchString)
         
         
@@ -40,7 +40,7 @@ func GroupWorkouts(workouts: [Workout]) -> Void {
     }
 }
 #Preview {
-    ContentView()
+    HomeView()
 }
 
 // Things we need. database of exciercises
