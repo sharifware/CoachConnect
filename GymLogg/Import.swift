@@ -17,6 +17,10 @@ struct Workout:  Identifiable {
     var Mechanics: String = ""
     var id = UUID()
     
+    var Sets: [Int] = [0]
+    var Reps: [Int] = [0]
+    var Weight: [Int] = [0]
+    
     init(raw: [String]){
         Exercise =  raw[0]
         Difficulty = raw[3]
